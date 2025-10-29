@@ -1,0 +1,911 @@
+/Users/watanabesaki/PycharmProjects/AFM/.venv/bin/python /Users/watanabesaki/PycharmProjects/AFM/src/features/analyze_features.py
+============================================================
+HeteroData Graph Analysis
+============================================================
+/Users/watanabesaki/PycharmProjects/AFM/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[SUCCESS] Graph loaded from: hetero_graph_test.pt
+[WARNING] ジャンルペアの語彙数が196個ではありません (171個)。
+          想定と異なるため、特徴量の解釈に注意が必要です。
+
+--- 1. User Node Features ---
+  Tensor Shape: torch.Size([1227, 200]) (N_Users x D_User)
+  Data Type: torch.float32
+
+  Sample (First User Vector Breakdown):
+    user_review_count_norm        : 1.2847
+    user_mean_rating_norm         : 0.5002
+    user_std_rating_norm          : -0.6376
+    user_activity_score           : 1.0406
+    [🌟] Action×Adventure              : 0.8077
+    [🌟] Action×Animation              : -0.7844
+    [🌟] Action×Comedy                 : 0.1958
+    [🌟] Action×Crime                  : -0.8234
+    [🌟] Action×Documentary            : 0.7640
+    [🌟] Action×Drama                  : -0.1531
+    [🌟] Action×Family                 : -0.9086
+    [🌟] Action×Fantasy                : -0.1061
+    [🌟] Action×History                : -0.4636
+    [🌟] Action×Horror                 : 0.2880
+    [🌟] Action×Music                  : -0.3903
+    [🌟] Action×Mystery                : -0.8099
+    [🌟] Action×Romance                : -0.0757
+    [🌟] Action×Science Fiction        : -0.9598
+    [🌟] Action×TV Movie               : 0.0000
+    [🌟] Action×Thriller               : 0.0000
+    [🌟] Action×War                    : 0.0000
+    [🌟] Action×Western                : 0.0000
+    [🌟] Adventure×Animation           : 0.0000
+    [🌟] Adventure×Comedy              : 0.0000
+    [🌟] Adventure×Crime               : 0.0000
+    [🌟] Adventure×Documentary         : 0.0000
+    [🌟] Adventure×Drama               : 0.0000
+    [🌟] Adventure×Family              : 0.0000
+    [🌟] Adventure×Fantasy             : 0.0000
+    [🌟] Adventure×History             : 0.0000
+    [🌟] Adventure×Horror              : 0.0000
+    [🌟] Adventure×Music               : 0.0000
+    [🌟] Adventure×Mystery             : 0.0000
+    [🌟] Adventure×Romance             : 0.0000
+    [🌟] Adventure×Science Fiction     : 0.0000
+    [🌟] Adventure×TV Movie            : 0.0000
+    [🌟] Adventure×Thriller            : 0.0000
+    [🌟] Adventure×War                 : 0.0000
+    [🌟] Adventure×Western             : 0.0000
+    [🌟] Animation×Comedy              : 0.0000
+    [🌟] Animation×Crime               : 0.0000
+    [🌟] Animation×Documentary         : 0.0000
+    [🌟] Animation×Drama               : 0.0000
+    [🌟] Animation×Family              : 0.0000
+    [🌟] Animation×Fantasy             : 0.0000
+    [🌟] Animation×History             : 0.0000
+    [🌟] Animation×Horror              : 0.0000
+    [🌟] Animation×Music               : 0.0000
+    [🌟] Animation×Mystery             : 0.0000
+    [🌟] Animation×Romance             : 0.0000
+    [🌟] Animation×Science Fiction     : 0.0000
+    [🌟] Animation×TV Movie            : 0.0000
+    [🌟] Animation×Thriller            : 0.0000
+    [🌟] Animation×War                 : 0.0000
+    [🌟] Animation×Western             : 0.0000
+    [🌟] Comedy×Crime                  : 0.0000
+    [🌟] Comedy×Documentary            : 0.0000
+    [🌟] Comedy×Drama                  : 0.0000
+    [🌟] Comedy×Family                 : 0.0000
+    [🌟] Comedy×Fantasy                : 0.0000
+    [🌟] Comedy×History                : 0.0000
+    [🌟] Comedy×Horror                 : 0.0000
+    [🌟] Comedy×Music                  : 0.0000
+    [🌟] Comedy×Mystery                : 0.0000
+    [🌟] Comedy×Romance                : 0.0000
+    [🌟] Comedy×Science Fiction        : 0.0000
+    [🌟] Comedy×TV Movie               : 0.0000
+    [🌟] Comedy×Thriller               : 0.0000
+    [🌟] Comedy×War                    : 0.0000
+    [🌟] Comedy×Western                : 0.0000
+    [🌟] Crime×Documentary             : 0.0000
+    [🌟] Crime×Drama                   : 0.0000
+    [🌟] Crime×Family                  : 0.0000
+    [🌟] Crime×Fantasy                 : 0.0000
+    [🌟] Crime×History                 : 0.0000
+    [🌟] Crime×Horror                  : 0.0000
+    [🌟] Crime×Music                   : 0.0000
+    [🌟] Crime×Mystery                 : 0.0000
+    [🌟] Crime×Romance                 : 0.0000
+    [🌟] Crime×Science Fiction         : 0.0000
+    [🌟] Crime×TV Movie                : 0.0000
+    [🌟] Crime×Thriller                : 0.0000
+    [🌟] Crime×War                     : 0.0000
+    [🌟] Crime×Western                 : 0.0000
+    [🌟] Documentary×Drama             : 0.0000
+    [🌟] Documentary×Family            : 0.0000
+    [🌟] Documentary×Fantasy           : 0.0000
+    [🌟] Documentary×History           : 0.0000
+    [🌟] Documentary×Horror            : 0.0000
+    [🌟] Documentary×Music             : 0.0000
+    [🌟] Documentary×Mystery           : 0.0000
+    [🌟] Documentary×Romance           : 0.0000
+    [🌟] Documentary×Science Fiction   : 0.0000
+    [🌟] Documentary×TV Movie          : 0.0000
+    [🌟] Documentary×Thriller          : 0.0000
+    [🌟] Documentary×War               : 0.0000
+    [🌟] Documentary×Western           : 0.0000
+    [🌟] Drama×Family                  : 0.0000
+    [🌟] Drama×Fantasy                 : 0.0000
+    [🌟] Drama×History                 : 0.0000
+    [🌟] Drama×Horror                  : 0.0000
+    [🌟] Drama×Music                   : 0.0000
+    [🌟] Drama×Mystery                 : 0.0000
+    [🌟] Drama×Romance                 : 0.0000
+    [🌟] Drama×Science Fiction         : 0.0000
+    [🌟] Drama×TV Movie                : 0.0000
+    [🌟] Drama×Thriller                : 0.0000
+    [🌟] Drama×War                     : 0.0000
+    [🌟] Drama×Western                 : 0.0000
+    [🌟] Family×Fantasy                : 0.0000
+    [🌟] Family×History                : 0.0000
+    [🌟] Family×Horror                 : 0.0000
+    [🌟] Family×Music                  : 0.0000
+    [🌟] Family×Mystery                : 0.0000
+    [🌟] Family×Romance                : 0.0000
+    [🌟] Family×Science Fiction        : 0.0000
+    [🌟] Family×TV Movie               : 0.0000
+    [🌟] Family×Thriller               : 0.0000
+    [🌟] Family×War                    : 0.0000
+    [🌟] Family×Western                : 0.0000
+    [🌟] Fantasy×History               : 0.0000
+    [🌟] Fantasy×Horror                : 0.0000
+    [🌟] Fantasy×Music                 : 0.0000
+    [🌟] Fantasy×Mystery               : 0.0000
+    [🌟] Fantasy×Romance               : 0.0000
+    [🌟] Fantasy×Science Fiction       : 0.0000
+    [🌟] Fantasy×TV Movie              : 0.0000
+    [🌟] Fantasy×Thriller              : 0.0000
+    [🌟] Fantasy×War                   : 0.0000
+    [🌟] Fantasy×Western               : 0.0000
+    [🌟] History×Horror                : 0.0000
+    [🌟] History×Music                 : 0.0000
+    [🌟] History×Mystery               : 0.0000
+    [🌟] History×Romance               : 0.0000
+    [🌟] History×Science Fiction       : 0.0000
+    [🌟] History×TV Movie              : 0.0000
+    [🌟] History×Thriller              : 0.0000
+    [🌟] History×War                   : 0.0000
+    [🌟] History×Western               : 0.0000
+    [🌟] Horror×Music                  : 0.0000
+    [🌟] Horror×Mystery                : 0.0000
+    [🌟] Horror×Romance                : 0.0000
+    [🌟] Horror×Science Fiction        : 0.0000
+    [🌟] Horror×TV Movie               : 0.0000
+    [🌟] Horror×Thriller               : 0.0000
+    [🌟] Horror×War                    : 0.0000
+    [🌟] Horror×Western                : 0.0000
+    [🌟] Music×Mystery                 : 0.0000
+    [🌟] Music×Romance                 : 0.0000
+    [🌟] Music×Science Fiction         : 0.0000
+    [🌟] Music×TV Movie                : 0.0000
+    [🌟] Music×Thriller                : 0.0000
+    [🌟] Music×War                     : 0.0000
+    [🌟] Music×Western                 : 0.0000
+    [🌟] Mystery×Romance               : 0.0000
+    [🌟] Mystery×Science Fiction       : 0.0000
+    [🌟] Mystery×TV Movie              : 0.0000
+    [🌟] Mystery×Thriller              : 0.0000
+    [🌟] Mystery×War                   : 0.0000
+    [🌟] Mystery×Western               : 0.0000
+    [🌟] Romance×Science Fiction       : 0.0000
+    [🌟] Romance×TV Movie              : 0.0000
+    [🌟] Romance×Thriller              : 0.0000
+    [🌟] Romance×War                   : 0.0000
+    [🌟] Romance×Western               : 0.0000
+    [🌟] Science Fiction×TV Movie      : 0.0000
+    [🌟] Science Fiction×Thriller      : 0.0000
+    [🌟] Science Fiction×War           : 0.0000
+    [🌟] Science Fiction×Western       : 0.0000
+    [🌟] TV Movie×Thriller             : 0.0000
+    [🌟] TV Movie×War                  : 0.0000
+    [🌟] TV Movie×Western              : 0.0000
+    [🌟] Thriller×War                  : 0.0000
+    [🌟] Thriller×Western              : 0.0000
+    [🌟] War×Western                   : 0.0000
+    [🌟] genre_pair_filler_000         : 0.0000
+    [🌟] genre_pair_filler_001         : 0.0000
+    [🌟] genre_pair_filler_002         : 0.0000
+    [🌟] genre_pair_filler_003         : 0.0000
+    [🌟] genre_pair_filler_004         : 0.0000
+    [🌟] genre_pair_filler_005         : 0.0000
+    [🌟] genre_pair_filler_006         : 0.0000
+    [🌟] genre_pair_filler_007         : 0.0000
+    [🌟] genre_pair_filler_008         : 0.0000
+    [🌟] genre_pair_filler_009         : 0.0000
+    [🌟] genre_pair_filler_010         : 0.0000
+    [🌟] genre_pair_filler_011         : 0.0000
+    [🌟] genre_pair_filler_012         : 0.0000
+    [🌟] genre_pair_filler_013         : 0.0000
+    [🌟] genre_pair_filler_014         : 0.0000
+    [🌟] genre_pair_filler_015         : 0.0000
+    [🌟] genre_pair_filler_016         : 0.0000
+    [🌟] genre_pair_filler_017         : 0.0000
+    [🌟] genre_pair_filler_018         : 0.0000
+    [🌟] genre_pair_filler_019         : 0.0000
+    [🌟] genre_pair_filler_020         : 0.0000
+    [🌟] genre_pair_filler_021         : 0.0000
+    [🌟] genre_pair_filler_022         : 0.0000
+    [🌟] genre_pair_filler_023         : 0.0000
+    [🌟] genre_pair_filler_024         : 0.0000
+
+--- 2. Movie Node Features ---
+  Tensor Shape: torch.Size([1142, 636]) (N_Movies x D_Movie)
+  Data Type: torch.float32
+
+  Sample (First Movie Vector Breakdown):
+    [🌟] movie_review_count_norm       : -0.4340
+    [🌟] movie_mean_rating_norm        : 0.0000
+    [🌟] movie_std_rating_norm         : -0.1519
+    [🌟] movie_popularity_score        : 0.0000
+    [🌟] movie_release_year_norm       : -0.1387
+    [🌟] movie_runtime_norm            : 0.0000
+    [🌟] movie_budget_norm             : -0.0741
+    [🌟] movie_revenue_norm            : 0.0000
+    A01                           : -0.0309
+    A02                           : 0.0085
+    A03                           : -0.0305
+    A04                           : 0.0399
+    A05                           : -0.0076
+    A06                           : -0.0297
+    A07                           : -0.0232
+    A08                           : -0.0036
+    A09                           : -0.0019
+    A10                           : -0.0054
+    A11                           : -0.0019
+    A12                           : -0.0044
+    A13                           : -0.0014
+    A14                           : -0.0027
+    A15                           : -0.0014
+    A17                           : -0.0025
+    A18                           : -0.0056
+    A21                           : -0.0061
+    A22                           : -0.0014
+    A25                           : -0.0114
+    A26                           : 0.0953
+    A27                           : -0.0036
+    A28                           : -0.0027
+    A36                           : -0.0027
+    A55                           : -0.0030
+    C01                           : 0.0484
+    C02                           : -0.0118
+    C03                           : -0.0191
+    C04                           : -0.0341
+    C05                           : -0.0239
+    C06                           : -0.0161
+    C07                           : -0.0117
+    C10                           : -0.0105
+    C11                           : -0.0066
+    C13                           : -0.0184
+    C16                           : -0.0014
+    C17                           : -0.0036
+    C21                           : -0.0086
+    C22                           : -0.0014
+    C23                           : -0.0035
+    C25                           : -0.0031
+    C26                           : -0.0014
+    C33                           : -0.0014
+    C47                           : -0.0014
+    C53                           : -0.0043
+    C54                           : -0.0019
+    D01                           : 0.0834
+    D02                           : 0.0060
+    D03                           : 0.0107
+    D04                           : 0.0321
+    D05                           : 0.0344
+    D06                           : 0.0310
+    D07                           : -0.0080
+    D08                           : -0.0147
+    D09                           : -0.0103
+    D10                           : -0.0045
+    D11                           : -0.0053
+    D12                           : -0.0023
+    D14                           : -0.0027
+    D15                           : -0.0014
+    D42                           : -0.0014
+    D44                           : -0.0024
+    D45                           : -0.0032
+    D46                           : -0.0045
+    D47                           : -0.0044
+    D48                           : -0.0050
+    E01                           : -0.0249
+    E02                           : -0.0423
+    E03                           : 0.0386
+    E04                           : -0.0231
+    E05                           : 0.1123
+    E06                           : -0.0237
+    E07                           : 0.0512
+    E08                           : -0.0246
+    E09                           : 0.0145
+    E10                           : -0.0508
+    E11                           : -0.0062
+    E12                           : -0.0135
+    E13                           : 0.0750
+    E14                           : -0.0047
+    E15                           : -0.0331
+    E16                           : -0.0348
+    E17                           : -0.0289
+    E18                           : -0.0189
+    E19                           : -0.0151
+    E20                           : -0.0034
+    E21                           : -0.0177
+    E22                           : -0.0014
+    E26                           : -0.0024
+    E27                           : -0.0024
+    E30                           : -0.0014
+    E35                           : -0.0033
+    E36                           : -0.0038
+    E37                           : -0.0024
+    E47                           : -0.0019
+    E48                           : 0.7777
+    E49                           : -0.0043
+    E50                           : -0.0050
+    E53                           : -0.0014
+    J01                           : 0.0566
+    J02                           : 0.0326
+    J03                           : 0.0320
+    J04                           : -0.0195
+    J05                           : -0.0014
+    J06                           : 0.0783
+    J07                           : -0.0046
+    J08                           : -0.0544
+    J09                           : -0.0334
+    J10                           : 0.0323
+    J11                           : 0.0315
+    J12                           : -0.0236
+    J13                           : 0.0502
+    J14                           : -0.0090
+    J15                           : -0.0068
+    J16                           : 0.0321
+    J17                           : -0.0422
+    J18                           : -0.0304
+    J19                           : -0.0286
+    J20                           : -0.0272
+    J21                           : -0.0026
+    J22                           : -0.0123
+    J23                           : -0.0200
+    J24                           : -0.0214
+    J25                           : -0.0210
+    J26                           : -0.0072
+    J27                           : 0.0451
+    J28                           : -0.0081
+    J29                           : -0.0104
+    J30                           : -0.0183
+    J31                           : -0.0206
+    J32                           : -0.0192
+    J33                           : -0.0253
+    J34                           : -0.0102
+    J35                           : -0.0110
+    J36                           : -0.0153
+    J37                           : -0.0122
+    J38                           : -0.0050
+    J39                           : -0.0141
+    J40                           : -0.0067
+    J41                           : -0.0078
+    J42                           : -0.0014
+    J43                           : -0.0032
+    J45                           : -0.0081
+    J46                           : -0.0027
+    J47                           : 0.4360
+    J48                           : 0.1066
+    J49                           : 0.0394
+    J50                           : 0.0842
+    J51                           : -0.0161
+    J52                           : -0.0160
+    J53                           : -0.0272
+    J54                           : -0.0146
+    J55                           : -0.0133
+    P01                           : 0.0299
+    P02                           : 0.0280
+    P03                           : 0.0379
+    P04                           : 0.0090
+    P05                           : 0.1157
+    P06                           : -0.0409
+    P07                           : 0.0244
+    P08                           : 0.0235
+    P09                           : 0.0379
+    P10                           : 0.0027
+    P11                           : -0.0219
+    P12                           : 0.0881
+    P13                           : 0.0490
+    P14                           : 0.0141
+    P15                           : -0.0014
+    P16                           : -0.0049
+    P17                           : -0.0031
+    P18                           : -0.0024
+    P20                           : -0.0024
+    P21                           : -0.0154
+    P23                           : -0.0019
+    P24                           : -0.0014
+    P25                           : -0.0109
+    P26                           : -0.0104
+    P27                           : -0.0227
+    P28                           : -0.0117
+    P29                           : -0.0027
+    P30                           : -0.0094
+    P31                           : -0.0050
+    P32                           : -0.0030
+    P33                           : -0.0056
+    P35                           : -0.0045
+    P36                           : -0.0024
+    P37                           : -0.0023
+    P38                           : -0.0014
+    P39                           : -0.0014
+    P45                           : -0.0014
+    P47                           : -0.0027
+    P50                           : -0.0019
+    S01                           : 0.0207
+    S02                           : -0.0273
+    S03                           : -0.0184
+    S04                           : 0.0178
+    S05                           : 0.0204
+    S06                           : 0.0073
+    S07                           : -0.0083
+    S08                           : -0.0113
+    S09                           : 0.0076
+    S10                           : -0.0079
+    S11                           : -0.0323
+    S12                           : -0.0187
+    S13                           : -0.0172
+    S14                           : -0.0076
+    S16                           : -0.0033
+    S17                           : -0.0014
+    S18                           : -0.0019
+    S21                           : -0.0014
+    S25                           : 0.0016
+    S26                           : -0.0168
+    S27                           : -0.0134
+    S28                           : -0.0038
+    S29                           : -0.0014
+    S30                           : -0.0014
+    S33                           : -0.0019
+    S34                           : -0.0014
+    S35                           : -0.0084
+    S36                           : -0.0051
+    S37                           : -0.0032
+    S40                           : -0.0014
+    S42                           : -0.0023
+    S43                           : -0.0033
+    S44                           : -0.0019
+    S48                           : -0.0019
+    S52                           : -0.0124
+    S53                           : -0.0054
+    T01                           : 0.0520
+    T02                           : 0.0062
+    T03                           : 0.0327
+    T04                           : 0.0437
+    T05                           : 0.1398
+    T06                           : -0.0069
+    T07                           : -0.0036
+    T08                           : -0.0223
+    T09                           : -0.0024
+    T10                           : -0.0027
+    T11                           : -0.0030
+    T13                           : -0.0035
+    T14                           : -0.0030
+    T16                           : -0.0019
+    T17                           : -0.0019
+    T20                           : -0.0024
+    T27                           : -0.0019
+    T30                           : -0.0034
+    T32                           : -0.0014
+    T35                           : -0.0014
+    V01                           : 0.0997
+    V02                           : -0.0352
+    V03                           : 0.0801
+    V04                           : 0.0290
+    V05                           : 0.0509
+    V06                           : -0.0236
+    V07                           : -0.0091
+    V10                           : -0.0136
+    V11                           : -0.0019
+    V12                           : -0.0027
+    V14                           : -0.0048
+    V16                           : -0.0033
+    V42                           : -0.0014
+    V47                           : -0.0024
+    V52                           : -0.0014
+    kw_fasttext_mean_001          : -0.0072
+    kw_fasttext_mean_002          : 0.0122
+    kw_fasttext_mean_003          : -0.0185
+    kw_fasttext_mean_004          : 0.0339
+    kw_fasttext_mean_005          : -0.0257
+    kw_fasttext_mean_006          : 0.0068
+    kw_fasttext_mean_007          : 0.0310
+    kw_fasttext_mean_008          : -0.0189
+    kw_fasttext_mean_009          : 0.0321
+    kw_fasttext_mean_010          : -0.0036
+    kw_fasttext_mean_011          : 0.0212
+    kw_fasttext_mean_012          : 0.0258
+    kw_fasttext_mean_013          : 0.0033
+    kw_fasttext_mean_014          : -0.0193
+    kw_fasttext_mean_015          : -0.0032
+    kw_fasttext_mean_016          : 0.0135
+    kw_fasttext_mean_017          : 0.0014
+    kw_fasttext_mean_018          : -0.0355
+    kw_fasttext_mean_019          : 0.0055
+    kw_fasttext_mean_020          : 0.0007
+    kw_fasttext_mean_021          : -0.0189
+    kw_fasttext_mean_022          : -0.0150
+    kw_fasttext_mean_023          : 0.0194
+    kw_fasttext_mean_024          : 0.0140
+    kw_fasttext_mean_025          : 0.0055
+    kw_fasttext_mean_026          : -0.0203
+    kw_fasttext_mean_027          : 0.0203
+    kw_fasttext_mean_028          : -0.0571
+    kw_fasttext_mean_029          : 0.0072
+    kw_fasttext_mean_030          : 0.0783
+    kw_fasttext_mean_031          : -0.0289
+    kw_fasttext_mean_032          : 0.0313
+    kw_fasttext_mean_033          : -0.0136
+    kw_fasttext_mean_034          : 0.0098
+    kw_fasttext_mean_035          : 0.0148
+    kw_fasttext_mean_036          : -0.0042
+    kw_fasttext_mean_037          : 0.0335
+    kw_fasttext_mean_038          : 0.0251
+    kw_fasttext_mean_039          : 0.0249
+    kw_fasttext_mean_040          : 0.0271
+    kw_fasttext_mean_041          : -0.0096
+    kw_fasttext_mean_042          : 0.0071
+    kw_fasttext_mean_043          : 0.0146
+    kw_fasttext_mean_044          : 0.0019
+    kw_fasttext_mean_045          : -0.0617
+    kw_fasttext_mean_046          : -0.0058
+    kw_fasttext_mean_047          : 0.0133
+    kw_fasttext_mean_048          : 0.0071
+    kw_fasttext_mean_049          : -0.0131
+    kw_fasttext_mean_050          : -0.0017
+    kw_fasttext_mean_051          : -0.0078
+    kw_fasttext_mean_052          : 0.0102
+    kw_fasttext_mean_053          : -0.0146
+    kw_fasttext_mean_054          : -0.0143
+    kw_fasttext_mean_055          : -0.0318
+    kw_fasttext_mean_056          : -0.0091
+    kw_fasttext_mean_057          : 0.0271
+    kw_fasttext_mean_058          : -0.0042
+    kw_fasttext_mean_059          : -0.0433
+    kw_fasttext_mean_060          : 0.0188
+    kw_fasttext_mean_061          : 0.0223
+    kw_fasttext_mean_062          : 0.0270
+    kw_fasttext_mean_063          : -0.0145
+    kw_fasttext_mean_064          : 0.0135
+    kw_fasttext_mean_065          : 0.0009
+    kw_fasttext_mean_066          : -0.0262
+    kw_fasttext_mean_067          : -0.0379
+    kw_fasttext_mean_068          : 0.0147
+    kw_fasttext_mean_069          : -0.0031
+    kw_fasttext_mean_070          : -0.0046
+    kw_fasttext_mean_071          : -0.0206
+    kw_fasttext_mean_072          : -0.0061
+    kw_fasttext_mean_073          : -0.0332
+    kw_fasttext_mean_074          : 0.0445
+    kw_fasttext_mean_075          : 0.0025
+    kw_fasttext_mean_076          : -0.0220
+    kw_fasttext_mean_077          : 0.0100
+    kw_fasttext_mean_078          : -0.0023
+    kw_fasttext_mean_079          : -0.0123
+    kw_fasttext_mean_080          : -0.0078
+    kw_fasttext_mean_081          : 0.0192
+    kw_fasttext_mean_082          : 0.0062
+    kw_fasttext_mean_083          : -0.0295
+    kw_fasttext_mean_084          : -0.0279
+    kw_fasttext_mean_085          : 0.0028
+    kw_fasttext_mean_086          : 0.0395
+    kw_fasttext_mean_087          : 0.0249
+    kw_fasttext_mean_088          : -0.0024
+    kw_fasttext_mean_089          : 0.0234
+    kw_fasttext_mean_090          : 0.0153
+    kw_fasttext_mean_091          : -0.0157
+    kw_fasttext_mean_092          : -0.0272
+    kw_fasttext_mean_093          : -0.0039
+    kw_fasttext_mean_094          : -0.0348
+    kw_fasttext_mean_095          : -0.0025
+    kw_fasttext_mean_096          : 0.0206
+    kw_fasttext_mean_097          : 0.0037
+    kw_fasttext_mean_098          : -0.0232
+    kw_fasttext_mean_099          : 0.0055
+    kw_fasttext_mean_100          : -0.0353
+    kw_fasttext_mean_101          : -0.0273
+    kw_fasttext_mean_102          : -0.0071
+    kw_fasttext_mean_103          : 0.0456
+    kw_fasttext_mean_104          : -0.0133
+    kw_fasttext_mean_105          : 0.0078
+    kw_fasttext_mean_106          : -0.0364
+    kw_fasttext_mean_107          : -0.0322
+    kw_fasttext_mean_108          : 0.0099
+    kw_fasttext_mean_109          : 0.0204
+    kw_fasttext_mean_110          : 0.0122
+    kw_fasttext_mean_111          : 0.0113
+    kw_fasttext_mean_112          : -0.0116
+    kw_fasttext_mean_113          : 0.0239
+    kw_fasttext_mean_114          : 0.0313
+    kw_fasttext_mean_115          : 0.0640
+    kw_fasttext_mean_116          : 0.0348
+    kw_fasttext_mean_117          : -0.0550
+    kw_fasttext_mean_118          : 0.0029
+    kw_fasttext_mean_119          : -0.0355
+    kw_fasttext_mean_120          : 0.0512
+    kw_fasttext_mean_121          : -0.0197
+    kw_fasttext_mean_122          : -0.0076
+    kw_fasttext_mean_123          : -0.0084
+    kw_fasttext_mean_124          : -0.0109
+    kw_fasttext_mean_125          : -0.0099
+    kw_fasttext_mean_126          : 0.0319
+    kw_fasttext_mean_127          : 0.0402
+    kw_fasttext_mean_128          : 0.0150
+    kw_fasttext_mean_129          : 0.0057
+    kw_fasttext_mean_130          : -0.0041
+    kw_fasttext_mean_131          : -0.0053
+    kw_fasttext_mean_132          : 0.0227
+    kw_fasttext_mean_133          : 0.0291
+    kw_fasttext_mean_134          : 0.0117
+    kw_fasttext_mean_135          : 0.0131
+    kw_fasttext_mean_136          : -0.0082
+    kw_fasttext_mean_137          : 0.0388
+    kw_fasttext_mean_138          : -0.0046
+    kw_fasttext_mean_139          : 0.0223
+    kw_fasttext_mean_140          : 0.0365
+    kw_fasttext_mean_141          : -0.0295
+    kw_fasttext_mean_142          : -0.0105
+    kw_fasttext_mean_143          : -0.0177
+    kw_fasttext_mean_144          : 0.0009
+    kw_fasttext_mean_145          : -0.0165
+    kw_fasttext_mean_146          : -0.0348
+    kw_fasttext_mean_147          : -0.0896
+    kw_fasttext_mean_148          : 0.0288
+    kw_fasttext_mean_149          : 0.0050
+    kw_fasttext_mean_150          : -0.0119
+    kw_fasttext_mean_151          : -0.0024
+    kw_fasttext_mean_152          : 0.0455
+    kw_fasttext_mean_153          : 0.0063
+    kw_fasttext_mean_154          : 0.0046
+    kw_fasttext_mean_155          : -0.0211
+    kw_fasttext_mean_156          : 0.0112
+    kw_fasttext_mean_157          : 0.0235
+    kw_fasttext_mean_158          : -0.0411
+    kw_fasttext_mean_159          : 0.0294
+    kw_fasttext_mean_160          : 0.0060
+    kw_fasttext_mean_161          : 0.0158
+    kw_fasttext_mean_162          : -0.0308
+    kw_fasttext_mean_163          : 0.0129
+    kw_fasttext_mean_164          : -0.0022
+    kw_fasttext_mean_165          : -0.0080
+    kw_fasttext_mean_166          : -0.0070
+    kw_fasttext_mean_167          : -0.0034
+    kw_fasttext_mean_168          : -0.0273
+    kw_fasttext_mean_169          : 0.0012
+    kw_fasttext_mean_170          : -0.0184
+    kw_fasttext_mean_171          : 0.0333
+    kw_fasttext_mean_172          : -0.0324
+    kw_fasttext_mean_173          : 0.0117
+    kw_fasttext_mean_174          : -0.0180
+    kw_fasttext_mean_175          : -0.0260
+    kw_fasttext_mean_176          : 0.0425
+    kw_fasttext_mean_177          : 0.0108
+    kw_fasttext_mean_178          : 0.0364
+    kw_fasttext_mean_179          : -0.0017
+    kw_fasttext_mean_180          : 0.0409
+    kw_fasttext_mean_181          : -0.0063
+    kw_fasttext_mean_182          : -0.0012
+    kw_fasttext_mean_183          : 0.0191
+    kw_fasttext_mean_184          : -0.0405
+    kw_fasttext_mean_185          : -0.0034
+    kw_fasttext_mean_186          : 0.0151
+    kw_fasttext_mean_187          : -0.0063
+    kw_fasttext_mean_188          : -0.0126
+    kw_fasttext_mean_189          : 0.0220
+    kw_fasttext_mean_190          : 0.0204
+    kw_fasttext_mean_191          : -0.0395
+    kw_fasttext_mean_192          : 0.0680
+    kw_fasttext_mean_193          : 0.0275
+    kw_fasttext_mean_194          : 0.0038
+    kw_fasttext_mean_195          : -0.0042
+    kw_fasttext_mean_196          : 0.0117
+    kw_fasttext_mean_197          : 0.0075
+    kw_fasttext_mean_198          : -0.0063
+    kw_fasttext_mean_199          : 0.0044
+    kw_fasttext_mean_200          : -0.0026
+    kw_fasttext_mean_201          : 0.0116
+    kw_fasttext_mean_202          : 0.0072
+    kw_fasttext_mean_203          : -0.0163
+    kw_fasttext_mean_204          : -0.0020
+    kw_fasttext_mean_205          : -0.0029
+    kw_fasttext_mean_206          : -0.0065
+    kw_fasttext_mean_207          : 0.0245
+    kw_fasttext_mean_208          : 0.0037
+    kw_fasttext_mean_209          : -0.0062
+    kw_fasttext_mean_210          : 0.0243
+    kw_fasttext_mean_211          : -0.0029
+    kw_fasttext_mean_212          : -0.0362
+    kw_fasttext_mean_213          : -0.0063
+    kw_fasttext_mean_214          : -0.0238
+    kw_fasttext_mean_215          : -0.0292
+    kw_fasttext_mean_216          : -0.0024
+    kw_fasttext_mean_217          : -0.0106
+    kw_fasttext_mean_218          : -0.0183
+    kw_fasttext_mean_219          : 0.0050
+    kw_fasttext_mean_220          : 0.0087
+    kw_fasttext_mean_221          : 0.0282
+    kw_fasttext_mean_222          : 0.0103
+    kw_fasttext_mean_223          : 0.0137
+    kw_fasttext_mean_224          : 0.0049
+    kw_fasttext_mean_225          : 0.0179
+    kw_fasttext_mean_226          : 0.0040
+    kw_fasttext_mean_227          : -0.0256
+    kw_fasttext_mean_228          : -0.0182
+    kw_fasttext_mean_229          : 0.0340
+    kw_fasttext_mean_230          : 0.0123
+    kw_fasttext_mean_231          : -0.0719
+    kw_fasttext_mean_232          : -0.0042
+    kw_fasttext_mean_233          : 0.0129
+    kw_fasttext_mean_234          : 0.0102
+    kw_fasttext_mean_235          : -0.0337
+    kw_fasttext_mean_236          : 0.0035
+    kw_fasttext_mean_237          : -0.0317
+    kw_fasttext_mean_238          : 0.0082
+    kw_fasttext_mean_239          : -0.0243
+    kw_fasttext_mean_240          : 0.0068
+    kw_fasttext_mean_241          : 0.0415
+    kw_fasttext_mean_242          : 0.0143
+    kw_fasttext_mean_243          : -0.0289
+    kw_fasttext_mean_244          : -0.0440
+    kw_fasttext_mean_245          : 0.0564
+    kw_fasttext_mean_246          : 0.0511
+    kw_fasttext_mean_247          : 0.0093
+    kw_fasttext_mean_248          : -0.0168
+    kw_fasttext_mean_249          : 0.0066
+    kw_fasttext_mean_250          : -0.0078
+    kw_fasttext_mean_251          : -0.0002
+    kw_fasttext_mean_252          : 0.0117
+    kw_fasttext_mean_253          : -0.0711
+    kw_fasttext_mean_254          : 0.0538
+    kw_fasttext_mean_255          : 0.0084
+    kw_fasttext_mean_256          : 0.0168
+    kw_fasttext_mean_257          : -0.0883
+    kw_fasttext_mean_258          : -0.0373
+    kw_fasttext_mean_259          : -0.0102
+    kw_fasttext_mean_260          : 0.0052
+    kw_fasttext_mean_261          : -0.0212
+    kw_fasttext_mean_262          : -0.0160
+    kw_fasttext_mean_263          : -0.0158
+    kw_fasttext_mean_264          : 0.0225
+    kw_fasttext_mean_265          : -0.0041
+    kw_fasttext_mean_266          : -0.0189
+    kw_fasttext_mean_267          : 0.0209
+    kw_fasttext_mean_268          : 0.0273
+    kw_fasttext_mean_269          : 0.0118
+    kw_fasttext_mean_270          : 0.0030
+    kw_fasttext_mean_271          : -0.0047
+    kw_fasttext_mean_272          : 0.0371
+    kw_fasttext_mean_273          : -0.0158
+    kw_fasttext_mean_274          : -0.0060
+    kw_fasttext_mean_275          : -0.0544
+    kw_fasttext_mean_276          : -0.0358
+    kw_fasttext_mean_277          : -0.0302
+    kw_fasttext_mean_278          : 0.0018
+    kw_fasttext_mean_279          : -0.0246
+    kw_fasttext_mean_280          : -0.0247
+    kw_fasttext_mean_281          : 0.0094
+    kw_fasttext_mean_282          : -0.0077
+    kw_fasttext_mean_283          : -0.0288
+    kw_fasttext_mean_284          : -0.0071
+    kw_fasttext_mean_285          : 0.0174
+    kw_fasttext_mean_286          : 0.0080
+    kw_fasttext_mean_287          : 0.0095
+    kw_fasttext_mean_288          : 0.0472
+    kw_fasttext_mean_289          : 0.0047
+    kw_fasttext_mean_290          : -0.0303
+    kw_fasttext_mean_291          : -0.0021
+    kw_fasttext_mean_292          : 0.0023
+    kw_fasttext_mean_293          : -0.0461
+    kw_fasttext_mean_294          : 0.0094
+    kw_fasttext_mean_295          : 0.0074
+    kw_fasttext_mean_296          : 0.0519
+    kw_fasttext_mean_297          : -0.0435
+    kw_fasttext_mean_298          : 0.0653
+    kw_fasttext_mean_299          : 0.0010
+    kw_fasttext_mean_300          : 0.0041
+    kw_count                      : 8.0000
+    kw_sbert_pca_01               : -0.0043
+    kw_sbert_pca_02               : 0.0590
+    kw_sbert_pca_03               : 0.0878
+    kw_sbert_pca_04               : 0.0512
+    kw_sbert_pca_05               : 0.0381
+    kw_sbert_pca_06               : -0.1172
+    kw_sbert_pca_07               : -0.0604
+    kw_sbert_pca_08               : 0.1001
+    kw_sbert_pca_09               : 0.0174
+    kw_sbert_pca_10               : 0.0206
+    kw_sbert_pca_11               : 0.0225
+    kw_sbert_pca_12               : 0.0258
+    kw_sbert_pca_13               : 0.0262
+    kw_sbert_pca_14               : -0.0002
+    kw_sbert_pca_15               : -0.0099
+    kw_sbert_pca_16               : -0.0409
+    kw_sbert_pca_17               : 0.0295
+    kw_sbert_pca_18               : -0.0334
+    kw_sbert_pca_19               : 0.0046
+    kw_sbert_pca_20               : -0.0514
+    kw_sbert_pca_21               : -0.0154
+    kw_sbert_pca_22               : 0.0142
+    kw_sbert_pca_23               : 0.0069
+    kw_sbert_pca_24               : -0.0021
+    kw_sbert_pca_25               : 0.0271
+    kw_sbert_pca_26               : -0.0727
+    kw_sbert_pca_27               : 0.0028
+    kw_sbert_pca_28               : 0.0263
+    kw_sbert_pca_29               : -0.0115
+    kw_sbert_pca_30               : -0.0174
+    kw_sbert_pca_31               : 0.0222
+    kw_sbert_pca_32               : 0.0109
+    kw_sbert_pca_33               : 0.0253
+    kw_sbert_pca_34               : 0.0329
+    kw_sbert_pca_35               : 0.0038
+    kw_sbert_pca_36               : 0.0153
+    kw_sbert_pca_37               : -0.0606
+    kw_sbert_pca_38               : 0.0168
+    kw_sbert_pca_39               : 0.0089
+    kw_sbert_pca_40               : 0.0125
+    kw_sbert_pca_41               : -0.0012
+    kw_sbert_pca_42               : -0.0049
+    kw_sbert_pca_43               : -0.0589
+    kw_sbert_pca_44               : -0.0013
+    kw_sbert_pca_45               : -0.0061
+    kw_sbert_pca_46               : 0.0162
+    kw_sbert_pca_47               : -0.0226
+    kw_sbert_pca_48               : -0.0057
+    kw_sbert_pca_49               : -0.0388
+    kw_sbert_pca_50               : -0.0091
+    kw_sbert_pca_51               : -0.0317
+    kw_sbert_pca_52               : 0.0071
+    kw_sbert_pca_53               : 0.0006
+    kw_sbert_pca_54               : 0.0142
+    kw_sbert_pca_55               : 0.0167
+    kw_sbert_pca_56               : -0.0284
+    kw_sbert_pca_57               : -0.0008
+    kw_sbert_pca_58               : -0.0196
+    kw_sbert_pca_59               : -0.0306
+    kw_sbert_pca_60               : 0.0108
+    kw_sbert_pca_61               : 0.0119
+    kw_sbert_pca_62               : -0.0026
+    kw_sbert_pca_63               : 0.0008
+    kw_sbert_pca_64               : 0.0209
+
+--- 3. Edge Features (User -> Review -> Movie) ---
+  Edge Count (E): 3583
+  Edge Attr Shape: torch.Size([3583, 38]) (E_Edges x 38D)
+  Target (y) Shape: torch.Size([3583]) (E_Edges x 1D)
+
+--- 4. Edge Sample Breakdown (First Review) ---
+  - Connecting User Index: 649
+  - Connecting Movie Index: 0
+
+  - Edge Attribute (38D Feature Vector):
+    mention_acting_performance    : 0.0354
+    mention_artistic_design       : 0.0000
+    mention_audio_music           : 0.0000
+    mention_casting_choices       : 0.0000
+    mention_character_development : 0.0000
+    mention_commercial_context    : 0.0000
+    mention_comparative_analysis  : 0.0000
+    mention_editing_pacing        : 0.3359
+    mention_emotion               : 0.0000
+    mention_expectation           : 0.0000
+    mention_filmmaking_direction  : 0.0000
+    mention_genre_style           : 0.0000
+    mention_recommendation        : 0.1041
+    mention_story_plot            : 0.0074
+    mention_technical_visuals     : 0.0000
+    mention_themes_messages       : 0.0000
+    mention_viewing_experience    : 0.0613
+    mention_writing_dialogue      : 0.0000
+    sentiment_acting_performance  : 4.0000
+    sentiment_artistic_design     : 3.0000
+    sentiment_audio_music         : 3.0000
+    sentiment_casting_choices     : 3.0000
+    sentiment_character_development: 3.0000
+    sentiment_commercial_context  : 3.0000
+    sentiment_comparative_analysis: 3.0000
+    sentiment_editing_pacing      : 5.0000
+    sentiment_emotion             : 3.0000
+    sentiment_expectation         : 3.0000
+    sentiment_filmmaking_direction: 3.0000
+    sentiment_genre_style         : 3.0000
+    sentiment_recommendation      : 4.0000
+    sentiment_story_plot          : 4.5000
+    sentiment_technical_visuals   : 3.0000
+    sentiment_themes_messages     : 3.0000
+    sentiment_viewing_experience  : 4.5000
+    sentiment_writing_dialogue    : 3.0000
+    [🎯] rating_user_norm              : 0.5838
+    [🎯] rating_raw                    : 8.0000
+
+  - Target Label (Y):
+    [🎯] Target (rating_user_norm): 0.5838
+
+プロセスは終了コード 0 で終了しました
